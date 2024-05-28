@@ -1,9 +1,22 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				"press-start": ['"Press Start 2P"', "cursive"],
-				pacifico: ['"Pacifico"', "cursive"],
+				"press-start": [
+					'"Press Start 2P"',
+					"cursive",
+					...defaultTheme.fontFamily.sans,
+				],
+				pacifico: ['"Pacifico"', "cursive", ...defaultTheme.fontFamily.sans],
+				markscript: [
+					'"MarckScript"',
+					"cursive",
+					...defaultTheme.fontFamily.sans,
+				],
+				bg: ["Neue-regular-cyrillic", ...defaultTheme.fontFamily.sans],
+				boldCyrillic: ["Neue-bold-cyrillic", ...defaultTheme.fontFamily.sans],
 			},
 		},
 	},

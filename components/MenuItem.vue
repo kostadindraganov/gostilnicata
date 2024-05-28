@@ -1,14 +1,14 @@
 <template>
 	<Card style="width: 25rem; overflow: hidden">
 		<template #header>
-			<img alt="user header" src="/assets/img/card-vue.jpg" />
+			<div class="flex justify-center items-center">
+				<h2 class="text-6xl text-white font-markscript absolute">
+					{{ sheet }}
+				</h2>
+				<img alt="user header" src="/assets/img/card-vue.jpg" />
+			</div>
 		</template>
-		<template #title>
-			<h1 class="text-6xl font-pacifico">Welcome</h1>
-
-			<h2 v-if="headings.length > 1">{{ sheet }}</h2>
-			<Skeleton v-else width="8rem" class="mb-2"></Skeleton>
-		</template>
+		<template #title> </template>
 		<template #subtitle>Card subtitle</template>
 		<template #content>
 			<div v-if="result.length > 1">

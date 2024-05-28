@@ -1,7 +1,10 @@
 <template>
 	<NuxtLayout>
 		<main class="h-screen p-5">
-			<MenuItem sheet="ДЕСЕРТИ" />
+			<div class="flex justify-center gap-3">
+				<MenuItem sheet="Супи" />
+				<MenuItem sheet="Десерти" />
+			</div>
 		</main>
 	</NuxtLayout>
 </template>
