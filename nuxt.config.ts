@@ -2,7 +2,11 @@
 export default defineNuxtConfig({
 	ssr: false,
 	devtools: { enabled: false },
-	modules: ["@nuxtjs/tailwindcss", "nuxt-primevue"],
+	modules: [
+        "@nuxtjs/tailwindcss",
+        "nuxt-primevue",
+        "@stefanobartoletti/nuxt-social-share"
+    ],
 	primevue: {
 		cssLayerOrder: "tailwind-base, primevue, tailwind-utilities",
 		components: {

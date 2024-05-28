@@ -5,6 +5,17 @@
 				<MenuItem sheet="Супи" />
 				<MenuItem sheet="Десерти" />
 			</div>
+			<div>
+				<!-- Basic use -->
+				<SocialShare network="facebook" />
+
+				<SocialShare network="twitter" />
+
+				<SocialShare network="linkedin" />
+
+				<!-- Customization with props -->
+				<SocialShare network="facebook" :styled="true" :label="false" />
+			</div>
 		</main>
 	</NuxtLayout>
 </template>
