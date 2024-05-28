@@ -4,6 +4,8 @@
 			<img alt="user header" src="/assets/img/card-vue.jpg" />
 		</template>
 		<template #title>
+			<h1 class="text-6xl font-pacifico">Welcome</h1>
+
 			<h2 v-if="headings.length > 1">{{ sheet }}</h2>
 			<Skeleton v-else width="8rem" class="mb-2"></Skeleton>
 		</template>
