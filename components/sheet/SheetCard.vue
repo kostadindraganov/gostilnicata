@@ -1,40 +1,41 @@
 <template>
-	<Card style="width: 25rem; overflow: hidden">
+	<Card
+		style="width: 25rem; overflow: hidden"
+		class="border-solid rounded-xl bg-stone bg-cover bg-no-repeat"
+	>
 		<template #header>
-			<div class="flex justify-center items-center">
-				<h2 class="text-6xl text-white font-markscript absolute">
-					{{ sheet }}
-				</h2>
-				<img alt="user header" src="/assets/img/card-vue.jpg" />
+			<div class="flex p justify-center items-center border-b-2 border-white">
+				<img alt="user header" :src="image" />
 			</div>
 		</template>
-		<template #title> </template>
-		<template #subtitle>Card subtitle</template>
+		<template #title>
+			<h2 class="text-5xl text-white font-markscript text-center mb-4 mx-2">
+				{{ sheet }}
+			</h2>
+			<Divider />
+		</template>
 		<template #content>
-			<div v-if="result.length > 1">
-				<div v-for="item in result">
-					<div class="flex justify-between items-center">
-						<span>{{ item[0] }} </span>
-						<span>{{ item[1] }} </span>
-						<span>{{ item[2] }} </span>
-					</div>
-				</div>
-			</div>
-			<Skeleton v-else width="100%" height="150px"></Skeleton>
+			<SheetItems :result="result" />
 		</template>
 		<template #footer>
-			<div class="flex gap-3 mt-1">
-				<Button label="Cancel" severity="secondary" outlined class="w-full" />
-				<Button label="Save" class="w-full" />
-			</div>
+			<div class="flex gap-3 mt-1"></div>
 		</template>
 	</Card>
 </template>
 
 <script setup>
+	import { reactive, computed } from "vue";
+
 	const props = defineProps({
 		sheet: String,
+		picture: String,
 	});
+
+	const image = computed(
+		() =>
+			`/assets/img/${props.picture}` ||
+			"https://t4.ftcdn.net/jpg/04/70/29/97/360_F_470299797_UD0eoVMMSUbHCcNJCdv2t8B2g1GVqYgs.jpg"
+	);
 
 	const headings = ref(null);
 	const result = ref([]);

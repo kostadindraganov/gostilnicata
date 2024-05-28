@@ -1,23 +1,56 @@
 <template>
 	<NuxtLayout>
-		<main class="h-screen p-5">
-			<div class="flex justify-center gap-3">
-				<MenuItem sheet="Супи" />
-				<MenuItem sheet="Десерти" />
+		<main class="p-5">
+			<div class="text-center text-4xl my-12">
+				<h3 class="section-title font-boldCyrillic">МЕНЮТО ДНЕС</h3>
 			</div>
-			<div>
-				<!-- Basic use -->
-				<SocialShare network="facebook" />
 
-				<SocialShare network="twitter" />
-
-				<SocialShare network="linkedin" />
-
+			<div class="flex justify-center gap-5 flex-row flex-wrap mt-5">
+				<SheetCard sheet="Супи" picture="soups.jpg" />
+				<SheetCard sheet="Аламинути" picture="alaminutes.jpg" />
+				<SheetCard sheet="Основни ястия" picture="mainfood.jpg" />
+				<SheetCard sheet="Салати" picture="salad.jpg" />
+				<SheetCard sheet="Скара" picture="grill.jpg" />
+				<SheetCard sheet="Десерти" picture="desert.jpg" />
+			</div>
+			<div class="flex justify-center gap-3 m-5">
 				<!-- Customization with props -->
 				<SocialShare network="facebook" :styled="true" :label="false" />
+				<SocialShare network="twitter" :styled="true" :label="false" />
+				<SocialShare network="linkedin" :styled="true" :label="false" />
+				<SocialShare network="whatsapp" :styled="true" :label="false" />
+				<SocialShare network="telegram" :styled="true" :label="false" />
 			</div>
 		</main>
 	</NuxtLayout>
 </template>
 
 <script setup></script>
+
+<style>
+	.section-title {
+		position: relative;
+		display: inline-block;
+		color: #fea116;
+	}
+	.section-title::after {
+		position: absolute;
+		content: "";
+		width: 45px;
+		height: 2px;
+		top: 50%;
+		right: -55px;
+		margin-top: -1px;
+		background: #fea116;
+	}
+	.section-title::before {
+		position: absolute;
+		content: "";
+		width: 45px;
+		height: 2px;
+		top: 50%;
+		left: -55px;
+		margin-top: -1px;
+		background: #fea116;
+	}
+</style>

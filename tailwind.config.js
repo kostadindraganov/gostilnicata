@@ -4,11 +4,7 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				"press-start": [
-					'"Press Start 2P"',
-					"cursive",
-					...defaultTheme.fontFamily.sans,
-				],
+				press: ['"Press Start 2P"', "cursive", ...defaultTheme.fontFamily.sans],
 				pacifico: ['"Pacifico"', "cursive", ...defaultTheme.fontFamily.sans],
 				markscript: [
 					'"MarckScript"',
@@ -18,6 +14,9 @@ module.exports = {
 				bg: ["Neue-regular-cyrillic", ...defaultTheme.fontFamily.sans],
 				boldCyrillic: ["Neue-bold-cyrillic", ...defaultTheme.fontFamily.sans],
 			},
+		},
+		backgroundImage: {
+			stone: "url('/assets/img/stone.jpeg')",
 		},
 	},
 };

@@ -3,14 +3,21 @@ export default defineNuxtConfig({
 	ssr: false,
 	devtools: { enabled: false },
 	modules: [
-        "@nuxtjs/tailwindcss",
-        "nuxt-primevue",
-        "@stefanobartoletti/nuxt-social-share"
-    ],
+		"@nuxtjs/tailwindcss",
+		"nuxt-primevue",
+		"@stefanobartoletti/nuxt-social-share",
+	],
 	primevue: {
 		cssLayerOrder: "tailwind-base, primevue, tailwind-utilities",
 		components: {
-			include: ["Card", "MegaMenu", "Button", "Skeleton"],
+			include: [
+				"Card",
+				"MegaMenu",
+				"Button",
+				"Skeleton",
+				"Divider",
+				"ScrollTop",
+			],
 			exclude: ["Editor", "Chart"],
 		},
 		options: {
