@@ -6,13 +6,12 @@ export default defineNuxtConfig({
 	primevue: {
 		cssLayerOrder: "tailwind-base, primevue, tailwind-utilities",
 		components: {
-			include: ["Card", "MegaMenu", "Button"],
+			include: ["Card", "MegaMenu", "Button", "Skeleton"],
 			exclude: ["Editor", "Chart"],
 		},
 		options: {
 			ripple: true,
-			unstyled: true,
-			pt: {},
+			unstyled: false,
 		},
 	},
 	css: [
