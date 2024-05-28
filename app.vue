@@ -1,9 +1,9 @@
 <template>
 	<NuxtLayout>
 		<main class="h-screen p-5">
-			<MenuItem />
+			<MenuItem sheet="ДЕСЕРТИ" />
 		</main>
 	</NuxtLayout>
 </template>
 
-<script setup lang="ts"></script>
+<script setup></script>

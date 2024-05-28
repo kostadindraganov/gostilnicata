@@ -1,11 +1,18 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+	ssr: false,
 	devtools: { enabled: false },
 	modules: ["@nuxtjs/tailwindcss", "nuxt-primevue"],
 	primevue: {
 		cssLayerOrder: "tailwind-base, primevue, tailwind-utilities",
 		components: {
-			include: "*",
+			include: ["Card", "MegaMenu", "Button"],
+			exclude: ["Editor", "Chart"],
+		},
+		options: {
+			ripple: true,
+			unstyled: true,
+			pt: {},
 		},
 	},
 	css: [
@@ -14,4 +21,23 @@ export default defineNuxtConfig({
 		// "primevue/resources/themes/lara-dark-indigo/theme.css",
 		"primeicons/primeicons.css",
 	],
+	runtimeConfig: {
+		public: {
+			GOOGLE_API_KEY: process.env.GOOGLE_API_KEY,
+			SPREAD_SHEET_ID: process.env.SPREAD_SHEET_ID,
+		},
+	},
+	build: {
+		transpile: ["nuxt", "primevue"],
+	},
+	sourcemap: {
+		client: false,
+		server: true,
+	},
+	postcss: {
+		plugins: {
+			tailwindcss: {},
+			autoprefixer: {},
+		},
+	},
 });
