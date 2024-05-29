@@ -54,4 +54,5 @@
 	const { data, error, refresh } = await useFetch(url);
 	headings.value = data.value.values[0];
 	result.value = [...data.value.values];
+	console.log(result.value);
 </script>
