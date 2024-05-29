@@ -18,13 +18,14 @@
 
 					<div class="font-bg text-center">
 						<h2
-							class="mb-6 text-sm font-boldCyrillic font-semibold text-gray-900 uppercase dark:text-white"
+							class="mb-6 text-sm font-boldCyrillic font-semibold text-orange-500 uppercase"
 						>
 							ЗА КОНТАКТ
 						</h2>
-						<ul class="text-gray-500 dark:text-gray-400 font-medium">
+						<ul class="text-white text-lg font-medium">
 							<li class="mb-4">
-								<p>бул. „Стефан Стамболов“ 13, Пазарджик</p>
+								<p>гр.Пазарджик</p>
+								<p>бул. „Стефан Стамболов“ 13</p>
 							</li>
 							<li>
 								<p>+359 87 878 5695</p>
