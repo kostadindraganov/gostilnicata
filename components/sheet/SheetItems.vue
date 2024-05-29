@@ -14,13 +14,13 @@
 					<span class="text-4xl"
 						>{{ item[2] }}<span class="text-sm">лв.</span></span
 					>
-					<Divider class="m-0 menu-divider" />
+					<Divider class="menu-divider" />
 					<span class="text-lg"
 						>{{ item[1] }}<span class="text-sm">гр.</span></span
 					>
 				</div>
 			</div>
-			<Divider class="m-0 menu-divider" />
+			<Divider class="menu-divider" />
 		</div>
 	</div>
 	<Skeleton v-else width="100%" height="150px"></Skeleton>
@@ -42,5 +42,6 @@
 <style scoped>
 	.menu-divider.p-divider-horizontal:before {
 		border-top: 1px solid #484a4c;
+		margin: 0px;
 	}
 </style>
