@@ -6,17 +6,17 @@
 			>
 				<div>
 					<p class="text-3xl mr-4 text-left leading-7">
-						{{ item[0] }}
+						{{ item[0] || "- - -" }}
 					</p>
 				</div>
 
 				<div class="flex flex-col justify-center items-center">
 					<span class="text-4xl"
-						>{{ item[2] }}<span class="text-sm">лв.</span></span
+						>{{ item[2] || "0" }}<span class="text-sm">лв.</span></span
 					>
 					<Divider class="menu-divider" />
 					<span class="text-lg"
-						>{{ item[1] }}<span class="text-sm">гр.</span></span
+						>{{ item[1] || "0" }}<span class="text-sm">гр.</span></span
 					>
 				</div>
 			</div>
