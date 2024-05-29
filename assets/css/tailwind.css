@@ -72,3 +72,14 @@
 .bg-stoneBg {
 	background-image: url(/assets/img/stone.jpeg);
 }
+.bg-footer {
+	background-image: url(/assets/img/footer.jpg);
+}
+
+.hero-header {
+	background: linear-gradient(rgba(15, 23, 43, 0.9), rgba(15, 23, 43, 0.9)),
+		url(/assets/img/bg-hero1.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}

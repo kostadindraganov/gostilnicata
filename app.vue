@@ -1,6 +1,6 @@
 <template>
 	<NuxtLayout>
-		<main class="p-5">
+		<main class="p-5 my-5">
 			<div class="text-center text-4xl my-12">
 				<h3 class="section-title font-boldCyrillic">МЕНЮТО ДНЕС</h3>
 			</div>
@@ -25,13 +25,23 @@
 	</NuxtLayout>
 </template>
 
-<script setup></script>
+<script setup>
+	useHead({
+		title: "Гостилницата Пазарджик",
+		meta: [
+			{
+				name: "description",
+				content: "Разнообразие от готвена храна за вкъщи.",
+			},
+		],
+	});
+</script>
 
 <style>
 	.section-title {
 		position: relative;
 		display: inline-block;
-		color: #fea116;
+		color: #f97316;
 	}
 	.section-title::after {
 		position: absolute;
@@ -41,7 +51,7 @@
 		top: 50%;
 		right: -55px;
 		margin-top: -1px;
-		background: #fea116;
+		background: #f97316;
 	}
 	.section-title::before {
 		position: absolute;
@@ -51,6 +61,6 @@
 		top: 50%;
 		left: -55px;
 		margin-top: -1px;
-		background: #fea116;
+		background: #f97316;
 	}
 </style>
