@@ -22,7 +22,7 @@
 				<SheetCard sheet="Десерти" picture="desert.jpg" />
 			</div>
 			<div class="flex justify-center items-center gap-3 mt-14 mb-8">
-				<p class="font-pacifico text-2xl">Сподели сега</p>
+				<p class="font-pacifico text-2xl text-orange-500 mx-3">Сподели сега</p>
 				<!-- Customization with props -->
 				<SocialShare network="facebook" :styled="true" :label="false" />
 				<SocialShare network="twitter" :styled="true" :label="false" />

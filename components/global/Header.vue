@@ -1,7 +1,7 @@
 <template>
 	<MegaMenu
 		:unstyled="false"
-		class="p-3 surface-0 flex flex-row align-items-center justify-between bg-transparent border-transparent w-full absolute"
+		class="pt-2 px-5 surface-0 flex flex-row align-items-center justify-between"
 	>
 		<template #start class="mr-5">
 			<img
@@ -76,3 +76,13 @@
 		<template #footer></template>
 	</Card> -->
 </template>
+
+<style scoped>
+	.p-megamenu {
+		width: 100%;
+		position: absolute;
+		background-color: transparent;
+		z-index: 20;
+		border: none;
+	}
+</style>
