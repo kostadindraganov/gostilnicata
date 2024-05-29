@@ -1,7 +1,7 @@
 <template>
 	<Card
 		style="width: 25rem; overflow: hidden"
-		class="border-solid rounded-xl bg-stone bg-stone1 bg-stone2 bg-ston3 bg-cover bg-no-repeat"
+		class="border-solid rounded-xl bg-stone bg-stoneBg bg-cover bg-no-repeat"
 	>
 		<template #header>
 			<div class="flex p justify-center items-center border-b-2 border-white">

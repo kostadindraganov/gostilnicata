@@ -69,3 +69,6 @@
 		@apply font-bold;
 	}
 }
+.bg-stoneBg {
+	background-image: url(/assets/img/stone.jpeg);
+}
