@@ -14,7 +14,7 @@
 			<a href="tel:0878785695">
 				<Button
 					rounded
-					class="bg-white text-orange-700 border-none"
+					class="order-btn"
 					type="button"
 					label="ПОРЪЧАЙ"
 					icon="pi pi-phone"
@@ -84,5 +84,10 @@
 		background-color: transparent;
 		z-index: 20;
 		border: none;
+	}
+	.order-btn {
+		background-color: white;
+		border: none;
+		color: #f97316;
 	}
 </style>
