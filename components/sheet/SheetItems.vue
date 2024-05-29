@@ -40,8 +40,10 @@
 </script>
 
 <style scoped>
+	.p-divider.p-divider-horizontal {
+		margin: 0px;
+	}
 	.menu-divider.p-divider-horizontal:before {
 		border-top: 1px solid #484a4c;
-		margin: 0px;
 	}
 </style>
