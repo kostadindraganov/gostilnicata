@@ -16,7 +16,7 @@
 					rounded
 					class="bg-white text-orange-700 border-none"
 					type="button"
-					label="Обади се"
+					label="ПОРЪЧАЙ"
 					icon="pi pi-phone"
 					severity="warning"
 				/>

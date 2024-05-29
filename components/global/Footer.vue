@@ -1,12 +1,12 @@
 <template>
 	<footer class="bg-white dark:bg-gray-900 bg-footer bg-cover bg-no-repeat">
 		<div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-			<div class="md:flex md:justify-between items-start">
+			<div class="md:flex md:justify-between items-center">
 				<div class="mb-6 md:mb-0">
 					<a href="https://flowbite.com/" class="flex items-center">
 						<img
 							src="~/assets/img/logo.jpg"
-							class="sm:h-24 md:h-16 me-3"
+							class="sm:w-24 md:w-52 me-3"
 							alt="FlowBite Logo"
 						/>
 					</a>
