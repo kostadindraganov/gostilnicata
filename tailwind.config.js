@@ -17,6 +17,9 @@ module.exports = {
 		},
 		backgroundImage: {
 			stone: "url('~/assets/img/stone.jpeg')",
+			stone1: "url('./assets/img/stone.jpeg')",
+			stone2: "url('assets/img/stone.jpeg')",
+			stone3: "url('/img/stone.jpeg')",
 		},
 	},
 };
