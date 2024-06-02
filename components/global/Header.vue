@@ -7,7 +7,7 @@
 			<img
 				src="~/assets/img/logo.jpg"
 				class="h-16 me-3 rounded-xl"
-				alt="FlowBite Logo"
+				alt="Gostilnicata Logo"
 			/>
 		</template>
 		<template #end>
