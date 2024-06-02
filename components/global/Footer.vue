@@ -51,8 +51,8 @@
 			/>
 			<div class="sm:flex sm:items-center sm:justify-between">
 				<span class="text-lg font-bg text-white sm:text-center"
-					>Възползвайте се от доставка на храна в град Пазарджик до Вашия дом
-					или офис сега.
+					>Доставката е от понеделник до петък, от 10 до 17.30. В рамките на
+					града под 15 лв. Доставка 3 лв.
 				</span>
 				<div class="flex mt-4 mr-4 sm:justify-center sm:mt-0">
 					<a
