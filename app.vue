@@ -23,7 +23,7 @@
 				<SheetCard sheet="Скара" picture="grill.jpg" />
 				<SheetCard sheet="Десерти" picture="desert.jpg" />
 				<span class="text-red-600"
-					>Посочените грамажи са преди термична обработка.</span
+					>Посочените грамажи са преди термична обработка на скара.</span
 				>
 			</div>
 			<div class="flex justify-center items-center gap-3 mt-14 mb-8">
