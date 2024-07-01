@@ -52,11 +52,13 @@
 			<div class="sm:flex sm:items-center sm:justify-between">
 				<span class="text-lg font-bg text-white sm:text-center"
 					>Доставката е от понеделник до петък, от 10 до 17.30. В рамките на
-					града под 15 лв. Доставка 3 лв.
+					града под 10 лв. Доставка 3 лв. Доставка извън града 6 лв. за селата :
+					Добровница, Главиница, Драгор, Огняново, Мирянци, Мало Конаре, Ивайло.
 				</span>
+
 				<div class="flex mt-4 mr-4 sm:justify-center sm:mt-0">
 					<a
-						href="#"
+						href="https://www.facebook.com/profile.php?id=61559700504367"
 						class="text-white hover:text-gray-900 dark:hover:text-white"
 					>
 						<svg

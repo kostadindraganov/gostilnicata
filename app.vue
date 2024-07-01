@@ -6,10 +6,12 @@
 					МЕНЮТО ДНЕС
 				</p>
 				<div class="text-dark-200 text-md my-4 px-3">
-					<span
-						>Доставката е от понеделник до петък, от 10 до 17.30. В рамките на
-						града под 15 лв. Доставка 3 лв.
-					</span>
+					<span>Доставката е от понеделник до петък, от 10 до 17.30. </span>
+					<p>В рамките на града под 10 лв. Доставка <b>3 лв.</b></p>
+					<p>
+						Доставка извън града <b>6 лв.</b> за селата : Добровница, Главиница,
+						Драгор, Огняново, Мирянци, Мало Конаре, Ивайло.
+					</p>
 				</div>
 			</div>
 
@@ -20,6 +22,9 @@
 				<SheetCard sheet="Салати" picture="salad.jpg" />
 				<SheetCard sheet="Скара" picture="grill.jpg" />
 				<SheetCard sheet="Десерти" picture="desert.jpg" />
+				<span class="text-red-600"
+					>Посочените грамажи са преди термична обработка.</span
+				>
 			</div>
 			<div class="flex justify-center items-center gap-3 mt-14 mb-8">
 				<p class="font-pacifico text-2xl text-orange-500 mr-2">Сподели</p>
