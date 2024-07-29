@@ -1,5 +1,5 @@
 <template>
-	<div v-if="data.length > 1">
+	<div v-if="data.length > 0">
 		<div v-for="(item, index) in result" key="index">
 			<div
 				class="flex justify-between items-center font-markscript text-white my-2"
@@ -23,7 +23,7 @@
 			<Divider class="menu-divider" />
 		</div>
 	</div>
-	<Skeleton v-else width="100%" height="150px"></Skeleton>
+	<div v-else width="100%" height="150px"></div>
 </template>
 
 <script setup>

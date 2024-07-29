@@ -52,7 +52,9 @@
 	}?key=${GOOGLE_API_KEY}`;
 
 	const { data, error, refresh } = await useFetch(url);
-	headings.value = data.value.values[0];
-	result.value = [...data.value.values];
-	console.log(result.value);
+	if (data.value.values) {
+		headings.value = data.value.values[0];
+		result.value = [...data.value.values];
+		console.log(result.value);
+	}
 </script>

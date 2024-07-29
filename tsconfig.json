@@ -1,12 +1,4 @@
 {
-  // https://nuxt.com/docs/guide/concepts/typescript
-  "extends": "./.nuxt/tsconfig.json",
-  "compilerOptions": {
-    "types": ["jest"]
-  },
-  "include": [
-    "./**/*.ts",
-    "./**/*.vue",
-    "./**/*.test.ts"
-  ]
+	// https://nuxt.com/docs/guide/concepts/typescript
+	"extends": "./.nuxt/tsconfig.json"
 }
