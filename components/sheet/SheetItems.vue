@@ -16,8 +16,10 @@
 					>
 					<Divider class="menu-divider" />
 					<span class="text-lg"
-						>{{ item[1] || "0" }}<span class="text-sm">гр.</span></span
-					>
+						>{{ item[1] || "0" }}
+						<span v-if="isCount" class="text-sm">бр.</span>
+						<span v-else="isCount" class="text-sm">гр.</span>
+					</span>
 				</div>
 			</div>
 			<Divider class="menu-divider" />
@@ -35,6 +37,7 @@
 			required: true,
 			default: [],
 		},
+		isCount: Boolean,
 	});
 	const data = computed(() => props.result || []);
 </script>

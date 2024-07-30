@@ -15,7 +15,7 @@
 			<Divider />
 		</template>
 		<template #content>
-			<SheetItems :result="result" />
+			<SheetItems :result="result" :is-count="isCount" />
 		</template>
 		<template #footer>
 			<div class="flex gap-3 mt-1"></div>
@@ -29,6 +29,7 @@
 	const props = defineProps({
 		sheet: String,
 		picture: String,
+		isCount: Boolean,
 	});
 
 	const image = computed(

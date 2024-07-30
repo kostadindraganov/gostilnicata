@@ -22,7 +22,7 @@
 				<SheetCard sheet="Салати" picture="salad.jpg" />
 				<SheetCard sheet="Скара" picture="grill.jpg" />
 				<SheetCard sheet="Десерти" picture="desert.jpg" />
-				<SheetCard sheet="Други" picture="other.jpg" />
+				<SheetCard sheet="Други" picture="other.jpg" :is-count="true" />
 			</div>
 			<div class="text-center">
 				<span class="text-red-600"
