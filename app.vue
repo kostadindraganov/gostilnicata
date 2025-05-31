@@ -37,7 +37,6 @@
 				<SocialShare network="linkedin" :styled="true" :label="false" />
 				<SocialShare network="whatsapp" :styled="true" :label="false" />
 				<SocialShare network="telegram" :styled="true" :label="false" />
-				<span @click="share">Share on facebook</span>
 
 			</div>
 		</main>
@@ -52,7 +51,7 @@
 		// Open Graph / Facebook
 		ogTitle: "Гостилницата Пазарджик",
 		ogDescription: "Гостилницата - Holiday PARK Пазарджик",
-		ogImage: "/assets/img/bg-hero1.jpg",
+		ogImage: "https://opengraph.b-cdn.net/production/images/0c3c6244-15ec-4c59-8a6c-7d5a4e724e6a.jpg?token=LDF_79woNPj39CcTYNk152SILDczlfXmEjaQsLHRCJg&height=675&width=1200&expires=33284731926",
 		ogUrl: "https://gostilnicata.com",
 		ogType: "website",
 		ogSiteName: "Gostilnicata",
@@ -61,16 +60,25 @@
 		twitterCard: "summary_large_image",
 		twitterTitle: "Гостилницата Пазарджик",
 		twitterDescription: "Гостилницата - Holiday PARK Пазарджик",
-		twitterImage: "/assets/img/bg-hero1.jpg",
+		twitterImage: "https://opengraph.b-cdn.net/production/images/0c3c6244-15ec-4c59-8a6c-7d5a4e724e6a.jpg?token=LDF_79woNPj39CcTYNk152SILDczlfXmEjaQsLHRCJg&height=675&width=1200&expires=33284731926",
 	});
-	import {useShareLink} from "vue3-social-sharing";
-	const {shareLink} = useShareLink();
-  const share = () => {
-    shareLink({
-      network: "facebook",
-      url: "https://gostilnicata.com"
-    })
-  }
+	useServerSeoMeta({
+		robots: 'index, follow',
+		title: "Гостилницата Пазарджик",
+		description: "Гостилницата - Holiday PARK Пазарджик",
+		ogTitle: "Гостилницата Пазарджик",
+		ogDescription: "Гостилницата - Holiday PARK Пазарджик", 
+		ogImage: "https://opengraph.b-cdn.net/production/images/0c3c6244-15ec-4c59-8a6c-7d5a4e724e6a.jpg?token=LDF_79woNPj39CcTYNk152SILDczlfXmEjaQsLHRCJg&height=675&width=1200&expires=33284731926",
+		ogUrl: "https://gostilnicata.com",
+		ogType: "website",
+		ogSiteName: "Gostilnicata",
+		twitterCard: "summary_large_image",
+		twitterTitle: "Гостилницата Пазарджик",
+		twitterDescription: "Гостилницата - Holiday PARK Пазарджик",
+		twitterImage: "https://opengraph.b-cdn.net/production/images/0c3c6244-15ec-4c59-8a6c-7d5a4e724e6a.jpg?token=LDF_79woNPj39CcTYNk152SILDczlfXmEjaQsLHRCJg&height=675&width=1200&expires=33284731926",
+		charset: 'utf-8',
+		viewport: 'width=device-width, initial-scale=1'
+	})
 
 </script>
 
