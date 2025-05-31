@@ -43,14 +43,23 @@
 </template>
 
 <script setup>
-	useHead({
+	useSeoMeta({
 		title: "Гостилницата Пазарджик",
-		meta: [
-			{
-				name: "description",
-				content: "Разнообразие от готвена храна за вкъщи.",
-			},
-		],
+		description: "Гостилницата - Holiday PARK Пазарджик",
+		
+		// Open Graph / Facebook
+		ogTitle: "Гостилницата Пазарджик",
+		ogDescription: "Гостилницата - Holiday PARK Пазарджик",
+		ogImage: "/assets/img/bg-hero1.jpg",
+		ogUrl: "https://gostilnicata.com",
+		ogType: "website",
+		ogSiteName: "Gostilnicata",
+		
+		// Twitter Cards
+		twitterCard: "summary_large_image",
+		twitterTitle: "Гостилницата Пазарджик",
+		twitterDescription: "Гостилницата - Holiday PARK Пазарджик",
+		twitterImage: "/assets/img/bg-hero1.jpg",
 	});
 </script>
 
