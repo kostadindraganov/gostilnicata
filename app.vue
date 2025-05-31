@@ -44,25 +44,88 @@
 </template>
 
 <script setup>
+	// Enhanced Facebook sharing setup
 	useSeoMeta({
-		title: "Гостилницата Пазарджик",
-		description: "Гостилницата - Holiday PARK Пазарджик",
+		title: "Гостилницата Пазарджик - Holiday PARK",
+		description: "Гостилницата в Holiday PARK Пазарджик - вкусна храна, доставка до дома, качествено обслужване от понеделник до петък",
+		keywords: "ресторант пазарджик, доставка храна, гостилница, holiday park, меню",
 		
-		// Open Graph / Facebook
-		ogTitle: "Гостилницата Пазарджик",
-		ogDescription: "Гостилницата - Holiday PARK Пазарджик",
-		ogImage: "https://opengraph.b-cdn.net/production/images/0c3c6244-15ec-4c59-8a6c-7d5a4e724e6a.jpg?token=LDF_79woNPj39CcTYNk152SILDczlfXmEjaQsLHRCJg&height=675&width=1200&expires=33284731926",
+		// Enhanced Open Graph for Facebook
+		ogTitle: "Гостилницата Пазарджик - Holiday PARK",
+		ogDescription: "Вкусна храна и качествено обслужване в Пазарджик. Доставка до дома от понеделник до петък, 10:00-17:00ч.",
+		ogImage: "https://gostilnicata.com/assets/img/bg-hero1.jpg", // Full URL for social sharing
+		ogImageWidth: "1200",
+		ogImageHeight: "630",
+		ogImageAlt: "Гостилницата Пазарджик - Holiday PARK ресторант",
 		ogUrl: "https://gostilnicata.com",
 		ogType: "website",
-		ogSiteName: "Gostilnicata",
+		ogSiteName: "Гостилницата",
+		ogLocale: "bg_BG",
 		
-		// Twitter Cards
+		// Facebook specific
+		fbAppId: "", // Add your Facebook App ID if you have one
+		
+		// Enhanced Twitter Cards  
 		twitterCard: "summary_large_image",
-		twitterTitle: "Гостилницата Пазарджик",
-		twitterDescription: "Гостилницата - Holiday PARK Пазарджик",
-		twitterImage: "https://opengraph.b-cdn.net/production/images/0c3c6244-15ec-4c59-8a6c-7d5a4e724e6a.jpg?token=LDF_79woNPj39CcTYNk152SILDczlfXmEjaQsLHRCJg&height=675&width=1200&expires=33284731926",
+		twitterSite: "@gostilnicata", // Add your Twitter handle
+		twitterTitle: "Гостилницата Пазарджик - Holiday PARK",
+		twitterDescription: "Вкусна храна и качествено обслужване в Пазарджик. Доставка до дома.",
+		twitterImage: "https://gostilnicata.com/assets/img/bg-hero1.jpg",
+		twitterImageAlt: "Гостилницата Пазарджик",
+		
+		// Additional SEO
+		robots: "index, follow",
+		author: "Гостилницата Пазарджик",
+		publisher: "https://gostilnicata.com",
 	});
 
+	// Explicit meta tags for Facebook validation
+	useHead({
+		meta: [
+			{ property: 'og:image', content: 'https://gostilnicata.com/assets/img/bg-hero1.jpg' },
+			{ property: 'og:image:width', content: '1200' },
+			{ property: 'og:image:height', content: '630' },
+			{ property: 'og:image:alt', content: 'Гостилницата Пазарджик - Holiday PARK ресторант' },
+			{ property: 'og:image:type', content: 'image/jpeg' },
+			{ property: 'og:title', content: 'Гостилницата Пазарджик - Holiday PARK' },
+			{ property: 'og:description', content: 'Вкусна храна и качествено обслужване в Пазарджик. Доставка до дома от понеделник до петък, 10:00-17:00ч.' },
+			{ property: 'og:url', content: 'https://gostilnicata.com' },
+			{ property: 'og:type', content: 'website' },
+			{ property: 'og:site_name', content: 'Гостилницата' },
+			{ property: 'og:locale', content: 'bg_BG' },
+		],
+		script: [
+			{
+				type: 'application/ld+json',
+				innerHTML: JSON.stringify({
+					"@context": "https://schema.org",
+					"@type": "Restaurant",
+					"name": "Гостилницата",
+					"description": "Ресторант в Holiday PARK Пазарджик",
+					"url": "https://gostilnicata.com",
+					"telephone": "+359...", // Add your actual phone
+					"address": {
+						"@type": "PostalAddress",
+						"streetAddress": "Holiday PARK",
+						"addressLocality": "Пазарджик",
+						"postalCode": "4400",
+						"addressCountry": "BG"
+					},
+					"servesCuisine": "Българска кухня",
+					"priceRange": "$$",
+					"openingHours": ["Mo-Fr 10:00-17:00"],
+					"hasMenu": "https://gostilnicata.com",
+					"serviceArea": {
+						"@type": "GeoCircle",
+						"geoMidpoint": {
+							"@type": "GeoCoordinates",
+							"addressLocality": "Пазарджик"
+						}
+					}
+				})
+			}
+		]
+	});
 </script>
 
 <style>
