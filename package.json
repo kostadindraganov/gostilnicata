@@ -11,7 +11,7 @@
 	"devDependencies": {
 		"@nuxt/devtools": "latest",
 		"@nuxtjs/tailwindcss": "6.8.0",
-		"@stefanobartoletti/nuxt-social-share": "^0.7.0",
+		"@stefanobartoletti/nuxt-social-share": "^1.2.3",
 		"nuxt": "^3.7.4",
 		"nuxt-primevue": "^0.1.0",
 		"vue": "^3.3.4",

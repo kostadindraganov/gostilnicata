@@ -5,6 +5,21 @@ export default defineNuxtConfig({
 		head: {
 			charset: "utf-8",
 			viewport: "width=device-width, initial-scale=1",
+			meta: [
+				// Open Graph / Facebook
+				{ property: "og:type", content: "website" },
+				{ property: "og:title", content: "Gostilnicata - Restaurant" },
+				{ property: "og:description", content: "Гостилницата - Holiday PARK Пазарджик" },
+				{ property: "og:image", content: "/assets/img/bg-hero1.jpg" },
+				{ property: "og:url", content: "https://gostilnicata.com" }, // Replace with your actual URL
+				{ property: "og:site_name", content: "Gostilnicata" },
+				
+				// Twitter Cards
+				{ name: "twitter:card", content: "summary_large_image" },
+				{ name: "twitter:title", content: "Gostilnicata - Restaurant" },
+				{ name: "twitter:description", content: "Гостилницата - Holiday PARK Пазарджик" },
+				{ name: "twitter:image", content: "/assets/img/bg-hero1.jpg" },
+			],
 		},
 	},
 	devtools: { enabled: false },
