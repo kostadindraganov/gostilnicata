@@ -20,7 +20,8 @@
 	"dependencies": {
 		"googleapis": "^137.1.0",
 		"primeicons": "^7.0.0",
-		"primevue": "^3.38.0"
+		"primevue": "^3.38.0",
+		"vue3-social-sharing": "^1.4.1"
 	},
 	"packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
 }

@@ -37,6 +37,8 @@
 				<SocialShare network="linkedin" :styled="true" :label="false" />
 				<SocialShare network="whatsapp" :styled="true" :label="false" />
 				<SocialShare network="telegram" :styled="true" :label="false" />
+				<span @click="share">Share on facebook</span>
+
 			</div>
 		</main>
 	</NuxtLayout>
@@ -61,6 +63,15 @@
 		twitterDescription: "Гостилницата - Holiday PARK Пазарджик",
 		twitterImage: "/assets/img/bg-hero1.jpg",
 	});
+	import {useShareLink} from "vue3-social-sharing";
+	const {shareLink} = useShareLink();
+  const share = () => {
+    shareLink({
+      network: "facebook",
+      url: "https://gostilnicata.com"
+    })
+  }
+
 </script>
 
 <style>
