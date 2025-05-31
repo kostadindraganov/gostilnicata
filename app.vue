@@ -62,23 +62,6 @@
 		twitterDescription: "Гостилницата - Holiday PARK Пазарджик",
 		twitterImage: "https://opengraph.b-cdn.net/production/images/0c3c6244-15ec-4c59-8a6c-7d5a4e724e6a.jpg?token=LDF_79woNPj39CcTYNk152SILDczlfXmEjaQsLHRCJg&height=675&width=1200&expires=33284731926",
 	});
-	useServerSeoMeta({
-		robots: 'index, follow',
-		title: "Гостилницата Пазарджик",
-		description: "Гостилницата - Holiday PARK Пазарджик",
-		ogTitle: "Гостилницата Пазарджик",
-		ogDescription: "Гостилницата - Holiday PARK Пазарджик", 
-		ogImage: "https://opengraph.b-cdn.net/production/images/0c3c6244-15ec-4c59-8a6c-7d5a4e724e6a.jpg?token=LDF_79woNPj39CcTYNk152SILDczlfXmEjaQsLHRCJg&height=675&width=1200&expires=33284731926",
-		ogUrl: "https://gostilnicata.com",
-		ogType: "website",
-		ogSiteName: "Gostilnicata",
-		twitterCard: "summary_large_image",
-		twitterTitle: "Гостилницата Пазарджик",
-		twitterDescription: "Гостилницата - Holiday PARK Пазарджик",
-		twitterImage: "https://opengraph.b-cdn.net/production/images/0c3c6244-15ec-4c59-8a6c-7d5a4e724e6a.jpg?token=LDF_79woNPj39CcTYNk152SILDczlfXmEjaQsLHRCJg&height=675&width=1200&expires=33284731926",
-		charset: 'utf-8',
-		viewport: 'width=device-width, initial-scale=1'
-	})
 
 </script>
 
