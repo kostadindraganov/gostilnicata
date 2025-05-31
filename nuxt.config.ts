@@ -1,5 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+	socialShare: {
+		baseUrl: 'https://gostilnicata.com' // required!
+		// other optional module options
+	},
 	ssr: false,
 	app: {
 		head: {
@@ -9,7 +13,7 @@ export default defineNuxtConfig({
 				{ hid: 'og-type', property: 'og:type', content: 'website' },
 				{ hid: 'og-title', property: 'og:title', content: 'Gostilnicata - Holiday PARK Пазарджик' },
 				{ hid: 'og-description', property: 'og:description', content: 'Гостилницата - Holiday PARK Пазарджик' },
-				{ hid: 'og-image', property: 'og:image', content: '/assets/img/bg-hero1.jpg' },
+				{ hid: 'og-image', property: 'og:image', content: 'https://opengraph.b-cdn.net/production/images/0c3c6244-15ec-4c59-8a6c-7d5a4e724e6a.jpg?token=LDF_79woNPj39CcTYNk152SILDczlfXmEjaQsLHRCJg&height=675&width=1200&expires=33284731926' },
 				{ hid: 'og-url', property: 'og:url', content: 'https://gostilnicata.com' },
 				{ hid: 'og-site_name', property: 'og:site_name', content: 'Gostilnicata' },
 				{ hid: 'twitter-card', name: 'twitter:card', content: 'summary_large_image' },
