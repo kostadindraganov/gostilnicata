@@ -49,11 +49,13 @@
 			<hr
 				class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
 			/>
-			<div class="sm:flex sm:items-center sm:justify-between">
+			<div class="sm:flex sm:items-center sm:justify-between mr-4">
 				<span class="text-lg font-bg text-white sm:text-center"
 					>Доставката е от понеделник до петък, от 10 до 17.30. В рамките на
-					града под 10 лв. Доставка 3 лв. Доставка извън града 6 лв. за селата :
-					Добровница, Главиница, Драгор, Огняново, Мирянци, Мало Конаре, Ивайло.
+					града под 10 лв. Доставка 3 лв. 
+					Приети поръчки до 11:00 часа се изпълняват до 12:00 часа.
+					
+					След 11:00 часа се изпълняват до 13:00 часа.
 				</span>
 
 				<div class="flex mt-4 mr-4 sm:justify-center sm:mt-0">
