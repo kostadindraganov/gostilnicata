@@ -18,7 +18,7 @@
 		"vue-router": "^4.2.5"
 	},
 	"dependencies": {
-		"@nuxtjs/seo": "^3.0.3",
+		"@nuxtjs/seo": "^3.1.0",
 		"googleapis": "^137.1.0",
 		"primeicons": "^7.0.0",
 		"primevue": "^3.38.0"
