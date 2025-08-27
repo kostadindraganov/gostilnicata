@@ -79,7 +79,7 @@
 			{ property: 'og:site_name', content: 'Гостилницата' },
 			{ property: 'og:locale', content: 'bg_BG' },
 			// Facebook App ID if you have one
-			{ property: 'fb:app_id', content: '' }, // Add your Facebook App ID
+			// { property: 'fb:app_id', content: '' }, // Add your Facebook App ID
 		],
 		script: [
 			{
