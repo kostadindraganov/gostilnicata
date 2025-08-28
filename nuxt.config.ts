@@ -4,7 +4,7 @@ export default defineNuxtConfig({
 		baseUrl: 'https://gostilnicata.com' // required!
 		// other optional module options
 	},
-	ssr: true,
+	ssr: false,
 	app: {
 		head: {
 			charset: "utf-8",
