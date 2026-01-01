@@ -12,7 +12,7 @@
 
 				<div class="flex flex-col justify-center items-center">
 					<span class="text-4xl"
-						>{{ item[2] || "0" }}<span class="text-sm">лв.</span></span
+						>{{ item[2] || "0" }}<span class="text-sm">€</span></span
 					>
 					<Divider class="menu-divider" />
 					<span class="text-lg"
