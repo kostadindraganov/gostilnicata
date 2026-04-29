@@ -49,7 +49,20 @@
 		description: "Гостилницата в Holiday PARK Пазарджик - вкусна храна, доставка до дома, качествено обслужване от понеделник до петък",
 		keywords: "ресторант пазарджик, доставка храна, гостилница, holiday park, меню",
 		
-		// Twitter Cards only (no conflicts with OG)
+		// Open Graph - explicitly provided
+		ogImage: "https://gostilnicata.com/assets/img/bg-hero1.jpg",
+		ogImageWidth: 1200,
+		ogImageHeight: 630,
+		ogImageAlt: "Гостилницата Пазарджик - Holiday PARK ресторант",
+		ogImageType: "image/jpeg",
+		ogTitle: "Гостилницата Пазарджик - Holiday PARK",
+		ogDescription: "Вкусна храна и качествено обслужване в Пазарджик. Доставка до дома от понеделник до петък, 10:00-17:00ч.",
+		ogUrl: "https://gostilnicata.com",
+		ogType: "website",
+		ogSiteName: "Гостилницата",
+		ogLocale: "bg_BG",
+
+		// Twitter Cards
 		twitterCard: "summary_large_image",
 		twitterSite: "@gostilnicata", // Add your Twitter handle
 		twitterTitle: "Гостилницата Пазарджик - Holiday PARK",
@@ -63,24 +76,8 @@
 		publisher: "https://gostilnicata.com",
 	});
 
-	// Explicit meta tags for Facebook validation (no duplicates)
+	// Structured data for search engines
 	useHead({
-		meta: [
-			// Facebook Open Graph - explicit tags
-			{ property: 'og:image', content: 'https://gostilnicata.com/assets/img/bg-hero1.jpg' },
-			{ property: 'og:image:width', content: '1200' },
-			{ property: 'og:image:height', content: '630' },
-			{ property: 'og:image:alt', content: 'Гостилницата Пазарджик - Holiday PARK ресторант' },
-			{ property: 'og:image:type', content: 'image/jpeg' },
-			{ property: 'og:title', content: 'Гостилницата Пазарджик - Holiday PARK' },
-			{ property: 'og:description', content: 'Вкусна храна и качествено обслужване в Пазарджик. Доставка до дома от понеделник до петък, 10:00-17:00ч.' },
-			{ property: 'og:url', content: 'https://gostilnicata.com' },
-			{ property: 'og:type', content: 'website' },
-			{ property: 'og:site_name', content: 'Гостилницата' },
-			{ property: 'og:locale', content: 'bg_BG' },
-			// Facebook App ID if you have one
-			// { property: 'fb:app_id', content: '' }, // Add your Facebook App ID
-		],
 		script: [
 			{
 				type: 'application/ld+json',
